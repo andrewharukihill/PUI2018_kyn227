@@ -1,4 +1,4 @@
-#### Lab 3
+#### Assignment 1 - Lab 3
 1. Created a file called test.csv in the CSV (Comma-separated values) format
 2. Commited file to repo with the screenshot uploaded 
 3. Pulled the file onto my local terminal to make changes
