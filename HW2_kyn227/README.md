@@ -8,9 +8,9 @@
 - Lab 3 completed 20 September 2018, worked collaboratively with Qin Yu and Vaidehi 
 
 #### Assignment 2 
-1. Sourced for a data set from NYUOPENDATA (Department of City Planning, NYC population by Neighbourhood)
-2. Rendered a table for the 7 Values of the data file
-3. Remove all and left 2 columns (Population and Year)
+1. Sourced for a data set from the Department of Environmental Protection (DEP)
+2. Rendered a table for the first 7 Values of the data file
+3. Remove all and left 2 columns 
 4. Plotted the 2 coloumns in a scatter plot.
-
+NB: Date is not considered a numerical value.
 - Lab 3 completed 20 September 2018, worked collaboratively with Qin Yu and Vaidehi 
