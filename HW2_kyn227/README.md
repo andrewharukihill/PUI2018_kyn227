@@ -13,7 +13,7 @@
 3. Remove all and left 2 columns 
 4. Plotted the 2 coloumns in a scatter plot.
 NB: Date is not considered a numerical value.
-- Lab 3 completed 20 September 2018, worked collaboratively with Qin Yu and Vaidehi 
+- Assignment 2 completed 20 September 2018, worked collaboratively with Qin Yu and Vaidehi 
 
 #### Assignment 3
 1. Requested for an API key from MTA
