@@ -8,15 +8,19 @@ import pylab as pl
 import traceback
 import os
 import json
+import sys
+
 try:
     import urllib2 as urllib
 except ImportError:
     import urllib.request as urllib
-
+apikey=str(sys.argv[1])
+bus_no=str(sys.argv[2])
+    
 get_ipython().run_line_magic('pylab', 'inline')
 pl.rc('font', size=15)
 
-url = "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key=06f927d1-679b-4e09-9062-cb337838097e&VehicleMonitoringDetailLevel=calls&LineRef=B52"
+url = "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key="+apikey+"&VehicleMonitoringDetailLevel=calls&LineRef="+bus_no
 print (url)
 response = urllib.urlopen(url)
 data = response.read().decode("utf-8")
