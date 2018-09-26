@@ -8,14 +8,21 @@
 - Lab 3 completed 20 September 2018, worked collaboratively with Qin Yu and Vaidehi 
 
 #### Assignment 2 
-1. Sourced for a data set from the Department of Environmental Protection (DEP)
-2. Rendered a table for the first 7 Values of the data file
-3. Remove all and left 2 columns 
+1. Sourced for a data set from the Department of Environmental Protection (DEP) in NYC open data.
+2. Rendered a table for the first 7 Values of the data file.
+3. Remove all and left 2 columns. 
 4. Plotted the 2 coloumns in a scatter plot.
 NB: Date is not considered a numerical value.
+5. Extra Credit assignment by generating information considering Year of data. 
 - Assignment 2 completed 20 September 2018, worked collaboratively with Qin Yu and Vaidehi 
 
 #### Assignment 3
-1. Requested for an API key from MTA
+1. Requested for an API key from MTA.
 2. Downloaded the data and parsed the information to obtain required information for bus locations and number of buses.
-3. Was stuck at the parsing stage for some time, much thanks to Vaidehi and the PUI2018 Slack community for assistance.
+3. Was stuck at the parsing stage for some time, much thanks to Vaidehi and the PUI2018 Slack community for assistance. Worked collaboratively with Mei Guan, Rachel, Qin Yu and Vaidehi.
+
+
+#### Assignment 4
+1. Wrote a Python script displaying the next stop location of buses as well as the names of stops.
+2. Output the script output the data to a CSV file.
+Worked collaboratively with Mei Guan, Rachel, Qin Yu and Vaidehi.

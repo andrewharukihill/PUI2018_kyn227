@@ -1,13 +1,12 @@
-
+from __future__ import print_function
 # coding: utf-8
 
 # In[6]:
 
 
-import pylab as pl
-import traceback
 import os
 import json
+
 import sys
 
 try:
@@ -16,9 +15,8 @@ except ImportError:
     import urllib.request as urllib
 apikey=str(sys.argv[1])
 bus_no=str(sys.argv[2])
+print("Bus Line: "+ bus_no)
     
-get_ipython().run_line_magic('pylab', 'inline')
-pl.rc('font', size=15)
 
 url = "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key="+apikey+"&VehicleMonitoringDetailLevel=calls&LineRef="+bus_no
 print (url)
@@ -56,13 +54,12 @@ data
 
 
 # In[11]:
+print ("Number of active buses: "+ str (len(data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'])))
 
-
-data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][0]['MonitoredVehicleJourney']['VehicleLocation']
+for bus in range(len(data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'])):
+    print ("Bus " + str(bus)+" is at latitude "+str(data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][bus]['MonitoredVehicleJourney']['VehicleLocation']['Latitude'])+ " and Longitude "+str(data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][bus]['MonitoredVehicleJourney']['VehicleLocation']['Longitude']))
+    
 
 
 # In[12]:
-
-
-len(data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'])
 
